@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "tp-simulation"
+version = "0.1.0"
+description = ""
+authors = ["Yannick Molinghen <yannick.molinghen@ulb.be>"]
+readme = "README.md"
+packages = [{include = "tp_simulation"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.3.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
